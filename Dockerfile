@@ -4,9 +4,9 @@ RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-
 
 RUN     yum install -y npm
 
-COPY    . /src
+COPY    ./src /src
 
-RUN     cd /src; npm install --save
+RUN     cd /src; npm install --save 
 
 EXPOSE  8181
 
